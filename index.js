@@ -27,6 +27,8 @@ client.on("messageCreate", (message) => {
     message.reply("Good Boy");
   } else if (message.content == "sithum") {
     message.reply("Go deyyo");
+  } else if (message.content == "chamod") {
+    message.reply("Github Ayya");
   }
 });
 
