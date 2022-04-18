@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const { Client, Intents } = require('discord.js');
 require("dotenv").config();
 
 const generateImage = require("./generateImage");
