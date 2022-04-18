@@ -1,11 +1,15 @@
 const Discord = require("discord.js");
-const { Client, Intents } = require('discord.js');
+const { Client, Intents } = require("discord.js");
 require("dotenv").config();
 
 const generateImage = require("./generateImage");
 
 const client = new Discord.Client({
-  intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS"],
+  intents: [
+    Intents.FLAGS.GUILDS,
+    Intents.FLAGS.GUILD_MESSAGES,
+    Intents.FLAGS.GUILD_MEMBERS,
+  ],
 });
 
 client.on("ready", () => {
